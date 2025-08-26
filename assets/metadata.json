@@ -1,0 +1,19 @@
+{
+  "name": "NK Tiger",
+  "description": "Tiger is a symbol of power, courage, and strength. This digital artwork captures the essence of the tiger, showcasing its striking features and commanding presence.",
+  "image": "ipfs://bafkreihgxj3fu2nyb5neep3f2o6g5ld7ittt4bpwvgcwvmvefvuvuyz5ga",
+  "attributes": [
+    {
+      "trait_type": "Type",
+      "value": "Digital Art"
+    },
+    {
+      "trait_type": "Year",
+      "value": "2025"
+    },
+    {
+      "trait_type": "Animal",
+      "value": "Tiger"
+    }
+  ]
+}
