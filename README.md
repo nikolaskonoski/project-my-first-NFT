@@ -1,66 +1,29 @@
-## Foundry
+# ERC-721 NFT Smart Contract with Foundry
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This project is a hands-on assignment to develop, test, and deploy a non-fungible token (NFT) smart contract on the Ethereum blockchain. The contract adheres to the ERC-721 standard, leveraging the secure and community-vetted contracts from OpenZeppelin.
 
-Foundry consists of:
+The entire development process was managed using the Foundry toolkit within a WSL (Windows Subsystem for Linux) environment, from compilation and testing to deployment and on-chain interaction.
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+The minted NFT is linked to metadata and an image stored on IPFS, demonstrating a complete and decentralized implementation pattern.
 
-## Documentation
+## Features
 
-https://book.getfoundry.sh/
+-   **ERC-721 Compliant**: Built using OpenZeppelin's `ERC721` base implementation.
+-   **Owner-Restricted Minting**: Utilizes `Ownable` to ensure only the contract owner can mint new tokens.
+-   **IPFS Metadata**: Token URIs point to decentralized metadata stored on IPFS.
+-   **Unique Token IDs**: Safely increments token IDs using OpenZeppelin's `Counters` library.
+-   **Efficient Development**: Developed and tested using the fast and modern Foundry toolkit.
 
-## Usage
+## Tech Stack
 
-### Build
+-   **Smart Contract**: Solidity `^0.8.20`
+-   **Framework**: Foundry (Forge & Cast)
+-   **Libraries**: OpenZeppelin Contracts `v5.x`
+-   **Blockchain**: Ethereum (Sepolia Testnet)
+-   **Decentralized Storage**: IPFS (via Pinata)
+-   **Development Environment**: Windows Subsystem for Linux (WSL)
 
-```shell
-$ forge build
-```
+## Deployed Contract
 
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+* **Network**: Sepolia Testnet
+* **Contract Address**: `0xC7F78BFC39B32e850d0E13B0a28c555705013D00`
